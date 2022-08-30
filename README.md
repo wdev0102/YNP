@@ -1,2 +1,2 @@
 # YNP
-[https://www.y-n-p.jp/]
+[YNP](https://www.y-n-p.jp/)
