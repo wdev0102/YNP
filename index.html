@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scalable=1">
+    <title>株式会社YNP</title>
+    <link rel="icon" href="./ynp/img/favicon.png" sizes="32x32">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./ynp/css/style.css">
+</head>
+
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./ynp/img/top-logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul class="menu-list pc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="">イベント</a></li>
+                <li><a href="recruit.html">リクルート</a></li>
+                <li><a href="contact.html">コンタクト</a></li>
+            </ul>
+            <div class="hamburger sp">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+        </div>
+    </div>
+    <ul class="menu-list sp">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="service.html">サービス</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="">イベント</a></li>
+        <li><a href="recruit.html">リクルート</a></li>
+        <li><a href="contact.html">コンタクト</a></li>
+    </ul>
+</header>
+<div class="loading" style="display:none;">
+    <div class="loading-logo">
+        <div class="loading-logo-pos">
+            <img src="./ynp/img/1.png" alt="">
+            <img src="./ynp/img/2.png" alt="">
+            <img src="./ynp/img/3.png" alt="">
+        </div>
+    </div>
+</div>
+
+<body>
+    <canvas id="canvas5"></canvas>
+    <section class="main_visual_section">
+        <div class="banner-logo">
+            <img src="./ynp/img/banner-logo.png" alt="">
+        </div>
+        <div class="concept">
+            <div class="concept-title">
+                <p>10年先も即戦力に!</p>
+            </div>
+            <div class="concept-text">
+                <p><img src="/ynp/img/next_.png" alt=""></p>
+                <p>近「変化の時代」と言われています。 日々変化が求められるこの時代に私たちは「10年後を見据えて即戦力になる！」と考え行動します。
+                </p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-content">
+                <p>Service</p>
+                <p></p>
+                <p>お客様の前に常駐するスタイルで開発やインフラ整備などをサポートします。</p>
+            </div>
+            <div class="more">
+                <a href="">
+                    <p>More</p>
+                    <img src="ynp/img/arrow.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="column-chart" style="display:none;">
+            <div class="column-chart-title">男女比比率</div>
+            <style id="bar_style">
+
+            </style>
+            <input type="text" value="80" id="ses_m" style="display:none;">
+            <input type="text" value="20" id="ses_f" style="display:none;">
+            <input type="text" value="10" id="si_m" style="display:none;">
+            <input type="text" value="90" id="si_f" style="display:none;">
+            <div id="chart">
+                <div>
+                    <ul id="bars">
+                        <li>
+                            <div data-percentage="80" class="bar anim1"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="20" class="bar anim2"></div>
+                        </li>
+                    </ul>
+                    <div class="ses">SES業界</div>
+                </div>
+                <div>
+                    <ul id="bars">
+                        <li>
+                            <div data-percentage="10" class="bar anim3"></div>
+                        </li>
+                        <li>
+                            <div data-percentage="90" class="bar anim4"></div>
+                        </li>
+                    </ul>
+                    <div class="ses">YNP</div>
+                </div>
+            </div>
+            <div class="view-mark">
+                <div class="gender">
+                    <p class="male"></p>
+                    <p>男性</p>
+                </div>
+                <div class="gender">
+                    <p class="female"></p>
+                    <p>女性</p>
+                </div>
+            </div>
+        </div>
+        <div class="piechart" style="display:none;">
+            <div id="">
+            </div>
+            <input type="text" value="5" id="dvp" style="display:none;">
+            <input type="text" value="15" id="srv" style="display:none;">
+            <input type="text" value="15" id="ntw" style="display:none;">
+            <input type="text" value="22" id="mo" style="display:none;">
+            <input type="text" value="15" id="it" style="display:none;">
+            <input type="text" value="28" id="oth" style="display:none;">
+            <style id="chart_style">
+
+            </style>
+            <figure>
+                <!--figcaption id="percentage" class="pie0">0%</figcaption-->
+                <svg viewBox="0 0 64 64" id="pie">
+                    <!--circle class="pie0" cx="32" cy="32" r="16"/-->
+					<text class="p0" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">0%</text>
+					<text class="p1" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">10%</text>
+					<text class="p2" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">20%</text>
+					<text class="p3" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">30%</text>
+					<text class="p4" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">40%</text>
+					<text class="p5" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">50%</text>
+					<text class="p6" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">60%</text>
+					<text class="p7" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">70%</text>
+					<text class="p8" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">80%</text>
+					<text class="p9" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">90%</text>
+					<text class="p10" text-anchor="start" x="26" y="34.5" font-family="Noto Sans JP" font-size="5" stroke="none" stroke-width="0" fill="#000" textLength="12">100%</text>
+                  </svg>
+            </figure>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <p style="background-color: #3366cc;"></p>
+                    <p>開発</p>
+                </div>
+                <div class="legend-item">
+                    <p style="background-color: #dc3912;"></p>
+                    <p>サーバー</p>
+                </div>
+                <div class="legend-item">
+                    <p style="background-color: #ff9900;"></p>
+                    <p>ネットワーク</p>
+                </div>
+                <div class="legend-item">
+                    <p style="background-color: #0099c6;"></p>
+                    <p>保守・運用</p>
+                </div>
+                <div class="legend-item">
+                    <p style="background-color: #990099;"></p>
+                    <p>ITサポート</p>
+                </div>
+                <div class="legend-item">
+                    <p style="background-color: #109618;"></p>
+                    <p>その他</p>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="recruit">
+            <div class="service-content">
+                <p>Recruit</p>
+                <p></p>
+                <p>採用支援サービスを通じて企業の継続的な成長をサポート HR×Technologyの活用により、企業の様々な採用課題に対して最適な手法を提案致します。
+                </p>
+            </div>
+            <div class="more">
+                <a href="">
+                    <p>More</p>
+                    <img src="ynp/img/arrow.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news-title">News</div>
+            <div class="news-item">
+                <div class="news-item-date">
+                    <p>2021年9月29日</p>
+                </div>
+                <div class="news-item-title">
+                    <p>ZIZAI、子会社IRIAMの全株式をDeNAへ譲渡</p>
+                    <p><img src="./ynp/img/half-arrow.png" alt=""></p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-item-date">
+                    <p>2021年9月30日</p>
+                </div>
+                <div class="news-item-title">
+                    <p>ZIZAI、子会社IRIAMの全株式をDeNAへ譲渡</p>
+                    <p><img src="./ynp/img/half-arrow.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-content">
+                <p>Contact</p>
+                <p></p>
+                <p>事業や採用、取材に関する お問い合わせはこちらから。
+                </p>
+            </div>
+            <div class="more">
+                <a href="">
+                    <p>More</p>
+                    <img src="ynp/img/arrow.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <input type="hidden" value="" id="ses_f">
+</body>
+
+<footer class=" fadeUp fadeUpTrigger">
+    <div class="footer pc">
+        <div class="logo">
+            <img src="./ynp/img/top-logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="">イベント</a></li>
+                <li><a href="recruit.html">リクルート</a></li>
+                <li><a href="contact.html">コンタクト</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="policy">
+            <p>© 2021 株式会社YNP</p>
+            <p>「セキュリティの方針」</p>
+        </div>
+        <div class="link">
+            <p>
+                <a href=""><img src="./ynp/img/facebook.png" alt=""></a>
+            </p>
+            <p>
+                <a href=""><img src="./ynp/img/wantedly.png" alt=""></a>
+            </p>
+        </div>
+    </div>
+</footer>
+<!--canavas circle animation-->
+<script>
+    // Multiple Colored Animated Circle - Get Canvas element by Id
+    var canvas5 = document.getElementById("canvas5");
+
+    // Set Canvas dimensions
+    w = window.innerWidth;
+    h = window.innerHeight;
+    f = w / 1920 + 0.3;
+    canvas5.width = w;
+    canvas5.height = h;
+
+    var circleColors = ['#f2d4b4', '#f9ede0'];
+
+    // Get drawing context
+    var c5 = canvas5.getContext('2d');
+
+    // The Circle class
+    function ColoredCircle(x, y, dx, dy, radius, color) {
+
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+
+        this.radius = radius;
+        this.color = color;
+
+        this.draw = function() {
+
+            c5.beginPath();
+
+            c5.fillStyle = this.color;
+
+            c5.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+
+            c5.fill();
+
+            c5.strokeStyle = this.color;
+
+            c5.stroke();
+        }
+
+        this.update = function() {
+
+            if (this.x + this.radius > w + 200 || this.x - this.radius < -200) {
+
+                this.dx = -this.dx;
+            }
+
+            if (this.y + this.radius > h + 200 || this.y - this.radius < -200) {
+
+                this.dy = -this.dy;
+            }
+
+            this.x += this.dx;
+            this.y += this.dy;
+
+            this.draw();
+        }
+    }
+
+    var coloredCircles = [];
+
+
+
+    // Radius
+    var radius = 50;
+
+    for (var i = 0; i < 10; i++) {
+
+        // Starting Position
+        var x = Math.random() * (w - radius * 2) + radius;
+        var y = Math.random() * (h - radius * 2) + radius;
+        //var x = Math.random() > 0.5 ? w : 0;
+        //var y = Math.random() > 0.5 ? h : 0;
+
+        // Speed in x and y direction
+        var dx = (Math.random() - 0.5) * 0.5;
+        var dy = (Math.random() - 0.5) * 0.5;
+
+        //Math.random() * (max - min) + min;
+        radius = Math.random() * (90 - 50) + 50;
+        radius *= f;
+        // Color
+        //var color = circleColors[i];
+        //var color = '#faf8ed';
+        var color = circleColors[i % 2];
+
+        coloredCircles.push(new ColoredCircle(x, y, dx, dy, radius, color));
+    }
+
+    function animate5() {
+
+        requestAnimationFrame(animate5);
+
+        c5.clearRect(0, 0, w, h);
+
+        for (var r = 0; r < 10; r++) {
+
+            coloredCircles[r].update();
+        }
+    }
+
+    animate5();
+</script>
+<script src="./ynp/js/jquery-3.6.0.min.js "></script>
+<script src="./ynp/js/main.js "></script>
+<!--piechart-->
+
+</html>
